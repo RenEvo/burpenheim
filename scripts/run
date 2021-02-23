@@ -1,0 +1,11 @@
+#!/bin/bash
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/valheim/valheim_server_Data/Plugins/x86_64 /home/steam/valheim/valheim_server \
+    -nographics \
+    -batchmode \
+    -name "Boy Meets Burp" \
+    -port 2456 \
+    -world "Burpenhiem" \
+    -password "burpcraft" \
+    -public 0 \
+    -savedir "/home/steam/valheim/GameData"

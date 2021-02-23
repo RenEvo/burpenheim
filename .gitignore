@@ -1,0 +1,12 @@
+/MonoBleedingEdge
+/steamapps
+/valheim_server_Data
+
+/steam_appid.txt
+/start_headless_server.bat
+
+/*.dll
+/*.pdb
+/*.exe
+/*.vdf
+/*.pdf
