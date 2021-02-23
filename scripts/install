@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp /home/steam/burpenheim/scripts/valheim.service /usr/lib/systemd/system/valheim.service
+systemctl daemon-reload
+systemctl enable valheim
