@@ -1,6 +1,10 @@
 #!/bin/bash
 
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/burpenheim/valheim_server_Data/Plugins/x86_64 /home/burpenheim/valheim/valheim_server \
+export TMP_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
+export SteamAppId=892970
+
+/home/steam/burpenheim/valheim_server.x86_64 \
     -nographics \
     -batchmode \
     -name "Boy Meets Burp" \
@@ -9,3 +13,5 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/burpenheim/valheim_server_Data/Plug
     -password "burpcraft" \
     -public 0 \
     -savedir "/home/steam/valheim/GameData"
+
+export LD_LIBRARY_PATH=$TMP_LD_LIBRARY_PATH

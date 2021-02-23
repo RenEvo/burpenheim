@@ -1,12 +1,20 @@
 /MonoBleedingEdge
+/linux64
 /steamapps
 /valheim_server_Data
 
 /steam_appid.txt
 /start_headless_server.bat
+/start_server.sh
+/start_server_xterm.sh
 
+/*.debug
+/*.so
+/*.drp
 /*.dll
 /*.pdb
 /*.exe
 /*.vdf
 /*.pdf
+/valheim_server.exe
+/valheim_server.x86_64
