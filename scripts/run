@@ -12,6 +12,6 @@ export SteamAppId=892970
     -world "Burpenhiem" \
     -password "burpcraft" \
     -public 0 \
-    -savedir "/home/steam/valheim/GameData"
+    -savedir "/home/steam/burpenheim/GameData"
 
 export LD_LIBRARY_PATH=$TMP_LD_LIBRARY_PATH
