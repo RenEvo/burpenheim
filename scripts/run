@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/valheim/valheim_server_Data/Plugins/x86_64 /home/steam/valheim/valheim_server \
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/burpenheim/valheim_server_Data/Plugins/x86_64 /home/burpenheim/valheim/valheim_server \
     -nographics \
     -batchmode \
     -name "Boy Meets Burp" \

@@ -3,14 +3,14 @@ Description=Valheim Server
 After=network.target
 
 [Service]
-WorkingDirectory=/home/steam/valheim/
+WorkingDirectory=/home/steam/burpenheim/
 User=steam
 Group=steam
 
-Environment="LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/valheim/valheim_server_Data/Plugins/x86_64"
+Environment="LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/steam/burpenheim/valheim_server_Data/Plugins/x86_64"
 ExecStartPre=-/usr/bin/git pull
-ExecStartPre=/home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/valheim +app_update 896660 validate +quit
-ExecStart=/home/steam/valheim/valheim_server -nographics -batchmode -name "Boy Meets Burp" -port 2456 -world "Burpenhiem" -password "burpcraft" -public 0 -savedir "/home/steam/valheim/GameData"
+ExecStartPre=/home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/burpenheim +app_update 896660 validate +quit
+ExecStart=/home/steam/burpenheim/valheim_server -nographics -batchmode -name "Boy Meets Burp" -port 2456 -world "Burpenhiem" -password "burpcraft" -public 0 -savedir "/home/steam/burpenheim/GameData"
 
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s INT $MAINPID
